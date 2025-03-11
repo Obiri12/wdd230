@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe6cf;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #dfe6cf;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1d411a;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    display: block;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+nav .active{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main Section */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    background-color: #dfe6cf;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: #003366;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #dfe6cf;
+    padding: 15px;
+    font-size: 1rem;
+}
