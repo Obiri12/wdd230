@@ -3,58 +3,66 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development | [Your Name] | Course Assignment Portal">
-    <meta name="author" content="[Your Name]">
-    <title>[Obiri Asiedu Bempa] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Obiri Asiedu Bempa | Course Assignment Portal">
+    <meta name="author" content="Obiri Asiedu Bempa">
+    <title>Obiri Asiedu Bempa - WDD 230 - Web Frontend Development</title>
+    
+    <!-- Custom Normalization -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <img src="images/profile.jpg" alt="Obiri Asiedu Bempa" width = "182" height="301" >
-      <span>[Obiri Asiedu Bempa]</span>
+        <button id="darkModeToggle">🌙</button> <!-- Dark Mode Button -->
+        <img src="images/profile.jpg" alt="Obiri Asiedu Bempa" width="182" height="301">
+        <span>Obiri Asiedu Bempa</span>
     </header>
-  
+
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="#">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
-      </ul>
-    </nav>
-  
-    <main>
-      <h1>WDD 230: Web Frontend Development</h1>
-  
-      <section class="card">
-        <h2>Learning Activities</h2>
-        <ul>
-          <li><a href="#">Week 01</a></li>
-          <li><a href="#">Week 02</a></li>
-          <li><a href="#">Week 03</a></li>
-          <li><a href="#">Week 04</a></li>
-          <li><a href="#">Week 05</a></li>
-          <li><a href="#">Week 05</a></li>
-          <li><a href="#">Week 06</a></li>
-          <li><a href="#">Week 07</a></li>
+        <button id="menuButton">☰</button> <!-- Hamburger Button -->
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
         </ul>
-      </section>
-  
-      <section class="card">
-        <h2>Information</h2>
-        <p>Weather in Ghana: <span id="weather">Loading...</span></p>
-        <p>Page Visits: Placeholder</p>
-      </section>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#">Week 01</a></li>
+                <li><a href="#">Week 02</a></li>
+                <li><a href="#">Week 03</a></li>
+                <li><a href="#">Week 04</a></li>
+                <li><a href="#">Week 05</a></li>
+                <li><a href="#">Week 06</a></li>
+                <li><a href="#">Week 07</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Information</h2>
+            <p>Weather in Ghana: <span id="weather">Loading...</span></p>
+            <p>Page Visits: Placeholder</p>
+        </section>
     </main>
-  
+
     <footer>
-      <p>&copy; <span id="year"></span> | [Obiri Asiedu Bempa] |  Ghana </p>
-      <p id="lastModified"></p>
+        <p>&copy; <span id="year"></span> | Obiri Asiedu Bempa | Ghana</p>
+        <p id="lastModified"></p>
     </footer>
-  
+
     <script src="scripts/getDates.js"></script>
-  </body>
+    <script src="scripts/main.js"></script> <!-- JavaScript for menu & dark mode -->
+</body>
+</html>
