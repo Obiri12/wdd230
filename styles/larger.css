@@ -1,22 +1,43 @@
+@media (max-width: 768px) {
+  #menuButton {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      background: var(--nav-bg);
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+}
+
 @media (min-width: 640px) {
-    nav ul {
+  nav ul {
       display: flex;
       justify-content: center;
-    }
+  }
 
-    nav ul li{
-        flex: 1 1 100%;
-    }
-  
-    main {
+  nav ul li {
+      flex: 1 1 100%;
+  }
+
+  main {
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 1rem;
       max-width: 1024px;
       margin: auto;
-    }
-  
-    .card {
-      width: 100%;
-    }
   }
+
+  .card {
+      width: 100%;
+  }
+}

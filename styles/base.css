@@ -102,30 +102,7 @@ nav .active {
     cursor: pointer;
     position: absolute;
     top: 10px;
-    left: 10px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    #menuButton {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: var(--nav-bg);
-        padding: 10px;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-}
+    left: 10px;}
 
 /* Main Section */
 main {
