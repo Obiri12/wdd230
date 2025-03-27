@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/main.js"></script>
-   
+    
 </head>
 <body>
     <header>
         <div class="top-bar">
             <img src="images/logo.png" alt="Chamber Logo">
-            <button class="cta-button">Join Our Newsletter</button>
+            <button class="cta-button" aria-label="Join Our Newsletter">Join Our Newsletter</button>
         </div>
         <nav>
-            <button class="menu-toggle">☰</button>
-            <ul class="nav-links">
+            <button id="menuButton" aria-label="Open navigation menu">☰</button> <!-- Improved Accessibility -->
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">News</a></li>
@@ -59,37 +59,37 @@
         <section class="gallery">
             <h2>Discover Accra</h2>
             <div class="image-container">
-                <img src="images/accra-street-market.jpg" alt="Accra Street Market" loading="lazy">
+                <img src="images/accra-street-market.jpg" alt="Accra Street Market" width="500" height="250" loading="lazy">
                 <p>Accra Street Market</p>
             </div>
             <div class="image-container">
-                <img src="images/independence-arch.jpg" alt="Independence Arch" loading="lazy">
+                <img src="images/independence-arch.jpg" alt="Independence Arch" width="500" height="250" loading="lazy">
                 <p>Independence Arch</p>
             </div>
             <div class="image-container">
-                <img src="images/labadi-beach.jpg" alt="Labadi Beach" loading="lazy">
+                <img src="images/labadi-beach.jpg" alt="Labadi Beach" width="500" height="250" loading="lazy">
                 <p>Labadi Beach</p>
             </div>
             <div class="image-container">
-                <img src="images/kwame-nkrumah-memorial-park.jpg" alt="Kwame Nkrumah Memorial Park" loading="lazy">
+                <img src="images/kwame-nkrumah-memorial-park.jpg" alt="Kwame Nkrumah Memorial Park" width="500" height="250" loading="lazy">
                 <p>Kwame Nkrumah Memorial Park</p>
             </div>
             <div class="image-container">
-                <img src="images/accra-business-district.jpg" alt="Accra Business District" loading="lazy">
+                <img src="images/accra-business-district.jpg" alt="Accra Business District" width="500" height="250" loading="lazy">
                 <p>Accra Business District</p>
             </div>
             <div class="image-container">
-                <img src="images/jamestown-lighthouse.jpg" alt="Jamestown Lighthouse" loading="lazy">
+                <img src="images/jamestown-lighthouse.jpg" alt="Jamestown Lighthouse" width="500" height="250" loading="lazy">
                 <p>Jamestown Lighthouse</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Contact us at: <a href="https://accrachamber.org">Accra Chamber of Commerce</a></p>
+        <p>Contact us at: <a href="https://accrachamber.org">Visit our Website</a></p>
         <p>&copy; 2025 Accra Chamber of Commerce</p>
         <p>Developed by OBIRI ASIEDU BEMPA - WDD 230 Project</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
-
-    
+</body>
+</html>

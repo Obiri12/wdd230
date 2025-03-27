@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Hamburger Menu Toggle
-    const menuButton = document.querySelector("#menuButton");
-    const navMenu = document.querySelector("nav ul");
-    
-    if (menuButton) {
-        menuButton.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    }
+   // Hamburger Menu Toggle
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", () => {
+    menu.classList.toggle("show");
+    menuButton.textContent = menu.classList.contains("show") ? "✖" : "☰";
+});
 
     // Display Last Modified Date in Footer
     const lastModified = document.querySelector("#lastModified");
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             visitMessage.textContent = "Welcome! Let us know if you have any questions.";
         } else {
             const daysSinceLastVisit = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
-            
+
             if (daysSinceLastVisit < 1) {
                 visitMessage.textContent = "Back so soon! Awesome!";
             } else {
