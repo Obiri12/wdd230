@@ -1,4 +1,4 @@
-:root {
+:root { 
     --primary-color: #2c3e50;
     --secondary-color: #ecf0f1;
     --accent-color: #000000;
@@ -75,4 +75,24 @@ button:hover {
     color: red;
     font-size: 0.9rem;
     margin-top: 5px;
+}
+
+header::before {
+    content: "Welcome to ";
+    font-weight: bold;
+}
+
+footer::after {
+    content: " - Thank you for visiting!";
+    font-style: italic;
+}
+
+nav ul li a::after {
+    content: " |";
+    color: var(--secondary-color);
+}
+
+label::after {
+    content: " *";
+    color: red;
 }
