@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-   // Hamburger Menu Toggle
-const menuButton = document.getElementById("menuButton");
-const menu = document.getElementById("menu");
+    // Hamburger Menu Toggle
+    const menuButton = document.getElementById("menuButton");
+    const menu = document.getElementById("menu");
 
-menuButton.addEventListener("click", () => {
-    menu.classList.toggle("show");
-    menuButton.textContent = menu.classList.contains("show") ? "✖" : "☰";
-});
+    if (menuButton && menu) {
+        menuButton.addEventListener("click", () => {
+            menu.classList.toggle("show");
+            menuButton.textContent = menu.classList.contains("show") ? "✖" : "☰";
+        });
+    }
 
     // Display Last Modified Date in Footer
     const lastModified = document.querySelector("#lastModified");
@@ -36,5 +38,40 @@ menuButton.addEventListener("click", () => {
 
         // Store the current visit
         localStorage.setItem("lastVisit", currentDate);
+    }
+
+    // Membership Form Handling
+    const membershipForm = document.getElementById("membershipForm");
+    if (membershipForm) {
+        // Set the timestamp when form loads
+        const timestampField = document.getElementById("timestamp");
+        if (timestampField) {
+            timestampField.value = new Date().toISOString();
+        }
+
+        // Form validation before submission
+        membershipForm.addEventListener("submit", (event) => {
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const orgName = document.getElementById("organization").value.trim();
+            const membershipLevel = document.getElementById("membershipLevel").value;
+            const position = document.getElementById("position").value.trim();
+
+            // Validate position with regex
+            const positionRegex = /^[A-Za-z\s-]{7,}$/;
+            if (!positionRegex.test(position)) {
+                alert("Position must contain only letters, spaces, and hyphens, with at least 7 characters.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!firstName || !lastName || !email || !phone || !orgName || !membershipLevel) {
+                alert("Please fill in all required fields.");
+                event.preventDefault();
+                return;
+            }
+        });
     }
 });

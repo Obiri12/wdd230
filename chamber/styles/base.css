@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base Styles */ 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 body {
@@ -6,6 +6,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* Header */
@@ -13,6 +18,7 @@ header {
     background: linear-gradient(to bottom, #b0d0f0, #ffffff);
     padding: 15px 0;
     text-align: center;
+    width: 100%;
 }
 
 .top-bar {
@@ -41,6 +47,7 @@ header {
 nav {
     background-color: var(--nav-bg);
     position: relative;
+    width: 100%;
 }
 
 nav ul {
@@ -60,7 +67,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: black
+    background-color: black;
 }
 
 nav .active {
@@ -91,55 +98,49 @@ nav {
     font-weight: bold;
 }
 
-
-/* Hamburger Menu Button */
-#menuButton {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-/* Hero Section */
-.hero {
+/* Membership Form */
+.membership-form {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    padding: 50px;
+    flex-direction: column;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+} 
+
+.membership-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
     text-align: left;
 }
 
-.hero-content {
-    max-width: 500px;
+.membership-form input, 
+.membership-form select, 
+.membership-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.hero h1 {
-    font-size: 40px;
-    color: #003366;
+.membership-form input[type="submit"] {
+    background-color: #002f6c;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #555;
-}
-
-.hero img {
-    width: 450px;
-}
-
-/* Sections */
-section {
-    padding: 30px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.membership-form input[type="submit"]:hover {
+    background-color: #00509e;
 }
 
 /* Footer */
@@ -148,4 +149,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }

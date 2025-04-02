@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank You for Applying - Accra Chamber of Commerce">
+    <meta name="author" content="Chamber of Commerce">
+    <title>Thank You - Accra Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <button class="cta-button">Join Our Newsletter</button>
+        </div>
+        <nav>
+            <button id="menuButton">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thank-you">
+        <section class="thank-you-content">
+            <h1>Thank You for Your Application!</h1>
+            <p>We appreciate your interest in joining the Accra Chamber of Commerce.</p>
+            <p>Our team will review your application and get in touch with you shortly.</p>
+            <a class="cta-button" href="index.html">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: <a href="https://accrachamber.org">Accra Chamber of Commerce</a></p>
+        <p>&copy; 2025 Accra Chamber of Commerce</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

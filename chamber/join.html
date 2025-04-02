@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Accra Chamber of Commerce - Apply for membership today!">
+    <meta name="author" content="Chamber of Commerce">
+    <meta property="og:title" content="Join Accra Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourwebsite.com/images/hero.jpg">
+    <meta property="og:url" content="https://accrachamber.org/join.html">
+    <title>Join Accra Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <button class="cta-button">Join Our Newsletter</button>
+        </div>
+        <nav>
+            <button id="menuButton">☰</button>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="membership-form">
+            <h1>Membership Application</h1>
+            <form action="thankyou.html" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="title">Title/Position:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z\-\s]{7,}">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="businessName">Business/Organization Name:</label>
+                <input type="text" id="businessName" name="businessName" required>
+                
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (Non-Profit - Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+                
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+                
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                <input type="submit" value="Apply Now">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at: <a href="https://accrachamber.org">Accra Chamber of Commerce</a></p>
+        <p>&copy; 2025 Accra Chamber of Commerce</p>
+        <p>Developed by OBIRI ASIEDU BEMPA - WDD 230 Project</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>
