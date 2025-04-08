@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Payson Utah Chamber",
+      "address": "123 Main St, Payson, UT",
+      "phone": "(801) 555-1234",
+      "website": "https://paysonchamber.com",
+      "image": "payson.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Boise Idaho Chamber",
+      "address": "456 Elm St, Boise, ID",
+      "phone": "(208) 555-5678",
+      "website": "https://boisechamber.com",
+      "image": "boise.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Oakland California Chamber",
+      "address": "789 Oak St, Oakland, CA",
+      "phone": "(510) 555-8765",
+      "website": "https://oaklandchamber.com",
+      "image": "oakland.jpg",
+      "membership": "Platinum"
+    },
+    {
+      "name": "Seattle Washington Chamber",
+      "address": "321 Pine St, Seattle, WA",
+      "phone": "(206) 555-2345",
+      "website": "https://seattlechamber.com",
+      "image": "seattle.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Denver Colorado Chamber",
+      "address": "654 Maple St, Denver, CO",
+      "phone": "(303) 555-9876",
+      "website": "https://denverchamber.com",
+      "image": "denver.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Phoenix Arizona Chamber",
+      "address": "987 Palm St, Phoenix, AZ",
+      "phone": "(602) 555-5432",
+      "website": "https://phoenixchamber.com",
+      "image": "phoenix.jpg",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Austin Texas Chamber",
+      "address": "159 River St, Austin, TX",
+      "phone": "(512) 555-6789",
+      "website": "https://austinchamber.com",
+      "image": "austin.jpg",
+      "membership": "Gold"
+    }
+  ]

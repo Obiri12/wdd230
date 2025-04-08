@@ -1,0 +1,70 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/flexbox.html",
+            "title": "Flexbox Example"
+          },
+          {
+            "url": "week02/grid.html",
+            "title": "CSS Grid Example"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/forms.html",
+            "title": "HTML Forms"
+          },
+          {
+            "url": "week03/js-basics.html",
+            "title": "JavaScript Basics"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "week04/api-fetch.html",
+            "title": "Fetching API Data"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/web-performance.html",
+            "title": "Web Performance"
+          },
+          {
+            "url": "week05/seo.html",
+            "title": "SEO Basics"
+          }
+        ]
+      }
+    ]
+  }
+  
