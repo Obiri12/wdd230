@@ -1,58 +1,58 @@
 [
-    {
-      "name": "Payson Utah Chamber",
-      "address": "123 Main St, Payson, UT",
-      "phone": "(801) 555-1234",
-      "website": "https://paysonchamber.com",
-      "image": "payson.jpg",
-      "membership": "Gold"
-    },
-    {
-      "name": "Boise Idaho Chamber",
-      "address": "456 Elm St, Boise, ID",
-      "phone": "(208) 555-5678",
-      "website": "https://boisechamber.com",
-      "image": "boise.jpg",
-      "membership": "Silver"
-    },
-    {
-      "name": "Oakland California Chamber",
-      "address": "789 Oak St, Oakland, CA",
-      "phone": "(510) 555-8765",
-      "website": "https://oaklandchamber.com",
-      "image": "oakland.jpg",
-      "membership": "Platinum"
-    },
-    {
-      "name": "Seattle Washington Chamber",
-      "address": "321 Pine St, Seattle, WA",
-      "phone": "(206) 555-2345",
-      "website": "https://seattlechamber.com",
-      "image": "seattle.jpg",
-      "membership": "Gold"
-    },
-    {
-      "name": "Denver Colorado Chamber",
-      "address": "654 Maple St, Denver, CO",
-      "phone": "(303) 555-9876",
-      "website": "https://denverchamber.com",
-      "image": "denver.jpg",
-      "membership": "Silver"
-    },
-    {
-      "name": "Phoenix Arizona Chamber",
-      "address": "987 Palm St, Phoenix, AZ",
-      "phone": "(602) 555-5432",
-      "website": "https://phoenixchamber.com",
-      "image": "phoenix.jpg",
-      "membership": "Bronze"
-    },
-    {
-      "name": "Austin Texas Chamber",
-      "address": "159 River St, Austin, TX",
-      "phone": "(512) 555-6789",
-      "website": "https://austinchamber.com",
-      "image": "austin.jpg",
-      "membership": "Gold"
-    }
-  ]
+  {
+    "name": "MTN Ghana",
+    "address": "Scancom Ltd, Independence Avenue, Accra",
+    "phone": "+233 24 430 0000",
+    "website": "https://mtn.com.gh",
+    "image": "mtn.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Ecobank Ghana",
+    "address": "2 Morocco Lane, Accra",
+    "phone": "+233 30 221 3999",
+    "website": "https://ecobank.com/gh",
+    "image": "ecobank.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Fan Milk Ghana",
+    "address": "1 Dzorwulu Crescent, Accra",
+    "phone": "+233 30 221 3554",
+    "website": "https://fanmilk.com.gh",
+    "image": "fanmilk.jpg",
+    "membership": "Platinum"
+  },
+  {
+    "name": "TotalEnergies Ghana",
+    "address": "Tema Motorway Industrial Area, Accra",
+    "phone": "+233 30 268 0066",
+    "website": "https://totalenergies.com.gh",
+    "image": "total.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Voltic Ghana",
+    "address": "Spintex Road, Accra",
+    "phone": "+233 30 282 0164",
+    "website": "https://volticghana.com",
+    "image": "voltic.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Kasapreko Company Limited",
+    "address": "Spintex Road, Accra",
+    "phone": "+233 30 281 1444",
+    "website": "https://kasaprekogh.com",
+    "image": "kasapreko.jpg",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Ghana Commercial Bank (GCB)",
+    "address": "High Street, Accra",
+    "phone": "+233 30 268 1532",
+    "website": "https://www.gcbbank.com.gh",
+    "image": "gcb.jpg",
+    "membership": "Gold"
+  }
+]
