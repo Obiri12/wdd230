@@ -1,82 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Accra Chamber of Commerce - Your gateway to local business and community engagement.">
-    <meta name="author" content="Chamber of Commerce">
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourwebsite.com/images/hero.jpg">
-    <meta property="og:url" content="https://accrachamber.org">
-    <title>Accra Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <script defer src="scripts/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to the Accra Chamber of Commerce - Your gateway to local business and community engagement.">
+  <meta name="author" content="Chamber of Commerce">
+  <meta property="og:title" content="Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourwebsite.com/images/hero.jpg">
+  <meta property="og:url" content="https://accrachamber.org">
+  <title>Accra Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlight.js"></script>
+  <script defer src="scripts/banner.js"></script>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <img src="images/logo.png" alt="Chamber Logo">
-            <button class="cta-button">Join Our Newsletter</button>
+  
+  <div id="meetBanner" class="banner hidden" role="region" aria-label="Meet and Greet Banner">
+    <p>Join us for a Chamber Meet and Greet on Wednesday at 7:00 p.m.!</p>
+    <button id="closeBanner" aria-label="Close Banner">❌</button>
+  </div>
+
+  <header>
+    <div class="top-bar">
+      <img src="images/logo.png" alt="Accra Chamber of Commerce Logo">
+      <button class="cta-button">Join Our Newsletter</button>
+    </div>
+    <nav>
+      <button id="menuButton" aria-label="Open Navigation Menu">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discovery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="View of Accra representing local business environment">
+      <div class="hero-content">
+        <h2>March 2025</h2>
+        <h1>We support passionate and dedicated small local businesses</h1>
+        <p>The MPPCC has several committees dedicated to offering quality benefits and opportunities for our members. We warmly welcome those who are interested in serving as committee representatives or volunteering their time as board members.</p>
+        <a class="cta-button" href="#">Click Here</a>
+      </div>
+      <div class="preview-container">
+        <img id="previewImage" src="images/preview1.png" alt="Preview of the latest Chamber publication">
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <p>Stay tuned for our latest events and networking opportunities.</p>
+
+      <div class="event-list">
+        <div class="event-card">
+          <h3>Networking Breakfast</h3>
+          <p class="event-date">May 20, 2025 - 8:00 AM to 10:00 AM</p>
+          <p class="event-description">Join us for a morning of networking and coffee with like-minded professionals.</p>
+          <a href="#" class="event-link">Learn More</a>
         </div>
-        <nav>
-            <button id="menuButton">☰</button> <!-- Hamburger Button -->
-        <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Business Directory</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Shop</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>March 2025</h2>
-                <h1>Accra Chamber of Commerce - Read the Latest Issue</h1>
-                <p>The Carlsbad Business Journal is an award-winning publication of the Chamber of Commerce.</p>
-                <a class="cta-button" href="#">Click Here</a>
-            </div>
-            <img src="images/hero-news.jpg" alt="Latest Issue Preview">
-        </section>
-        
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <p>Stay tuned for our latest events and networking opportunities.</p>
-        </section>
-        
-        <section class="weather">
-            <h2>Current Weather</h2>
-            <p>Weather data will be dynamically loaded here.</p>
-        </section>
-        
-        <section class="spotlights">
-            <h2>Business Spotlights</h2>
-            <div class="spotlight">Business 1</div>
-            <div class="spotlight">Business 2</div>
-            <div class="spotlight">Business 3</div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Contact us at: <a href="https://accrachamber.org">Accra Chamber of Commerce</a></p>
-        <p>&copy; 2025 Accra Chamber of Commerce</p>
-        <p>Developed by OBIRI ASIEDU BEMPA - WDD 230 Project</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
-    </footer>
-    
-    <script>
-        document.getElementById('lastModified').textContent = document.lastModified;
-    </script>
+        <div class="event-card">
+          <h3>Tech Innovations Seminar</h3>
+          <p class="event-date">June 5, 2025 - 10:00 AM to 4:00 PM</p>
+          <p class="event-description">A seminar focusing on the latest trends and innovations in technology.</p>
+          <a href="#" class="event-link">Learn More</a>
+        </div>
+        <div class="event-card">
+          <h3>Startup Pitch Night</h3>
+          <p class="event-date">June 15, 2025 - 6:00 PM to 9:00 PM</p>
+          <p class="event-description">An exciting night where entrepreneurs pitch their startup ideas to investors.</p>
+          <a href="#" class="event-link">Learn More</a>
+        </div>
+        <div class="event-card">
+          <h3>Marketing Strategies Workshop</h3>
+          <p class="event-date">July 2, 2025 - 9:00 AM to 12:00 PM</p>
+          <p class="event-description">A hands-on workshop designed to help marketers develop winning strategies.</p>
+          <a href="#" class="event-link">Learn More</a>
+        </div>
+        <div class="event-card">
+          <h3>Annual Gala Dinner</h3>
+          <p class="event-date">August 22, 2025 - 7:00 PM</p>
+          <p class="event-description">Celebrate the year with a night of fine dining, awards, and entertainment.</p>
+          <a href="#" class="event-link">Learn More</a>
+        </div>
+      </div>
+
+      <div class="view-more">
+        <a href="#" class="btn">View All Events</a>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <p id="current-temp">Loading temperature...</p>
+      <p id="weather-desc">Loading weather description...</p>
+      <div id="forecast">
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlights-container">
+       
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at: <a href="https://accrachamber.org">Accra Chamber of Commerce</a></p>
+    <p>&copy; 2025 Accra Chamber of Commerce</p>
+    <p>Developed by OBIRI ASIEDU BEMPA - WDD 230 Project</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
 </body>
 </html>

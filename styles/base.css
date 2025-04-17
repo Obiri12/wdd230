@@ -180,3 +180,11 @@ footer {
     padding: 15px;
     font-size: 1rem;
 }
+
+/* Grid layout for main card sections */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-block: 1.5rem;
+}

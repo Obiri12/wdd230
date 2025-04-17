@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Business Directory of the Accra Chamber of Commerce. Explore verified business members, contact information, and membership levels.">
+    <meta name="description" content="Accra Chamber of Commerce Directory">
     <meta name="author" content="Chamber of Commerce">
-    <meta property="og:title" content="Business Directory - Accra Chamber of Commerce">
+    <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://accrachamber.org/images/hero.jpg">
+    <meta property="og:image" content="https://yourwebsite.com/images/hero.jpg">
     <meta property="og:url" content="https://accrachamber.org">
     <title>Business Directory - Accra Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -26,15 +26,15 @@
         <nav>
             <button id="menuButton">☰</button>
             <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="directory.html" class="active">Business Directory</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discovery</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +45,10 @@
             <button id="list-view">📄 List</button>
         </div>
         <hr>
-        <div id="members-container" class="grid-view"></div>
+        <section id="members-container" class="grid-view">
+            <h2 class="visually-hidden">Business Members List</h2>
+            <!-- Dynamic content will be injected here by JS -->
+        </section>
     </main>
 
     <footer>
@@ -60,6 +63,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 

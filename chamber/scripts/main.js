@@ -74,4 +74,26 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // 🔄 Image Preview Rotator
+    const previewImages = [
+        "images/preview1.png",
+        "images/preview2.png",
+        "images/preview3.png",
+        "images/preview4.png",  // New image added
+        "images/preview5.png"   // New image added
+    ];
+
+    let currentIndex = 0;
+    const previewImg = document.getElementById("previewImage");
+
+    if (previewImg && previewImages.length > 0) {
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % previewImages.length;
+            previewImg.src = previewImages[currentIndex];
+        }
+
+        // Change image every 3 seconds
+        setInterval(changeImage, 3000);
+    }
 });
